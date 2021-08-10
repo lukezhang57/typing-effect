@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: 'Darker Grotesque';
+    color: rgb(240,240,240);
+    font-size: 64px;
+ }
+.background1{
+    background-image: url(background1.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.textcontainer{
+    display: flex;
+    padding: 50px;
+    user-select: none;
+}
+.word {
+    position: relative;
+    color: #12e397;
+}
+.word::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    background-color: rgb(240,240,240);
+    margin-left: 8px;
+    animation: blink 0.85s infinite ease;
+    margin-top: 20px;
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    40%{
+          opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
