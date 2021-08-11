@@ -14,36 +14,37 @@ function type(){
             document.querySelector('.word').textContent = letter;
         }
         else if (wordindex === words[listindex].length){
-            letter = letter + ".";
             document.querySelector('.word').textContent = letter;
-            wordindex++;
+            document.querySelector('.period').textContent = ".";
+            wordindex+=20;
         }
         else if (wordindex > words[listindex].length){
             atEnd = true;
         }
-        if (words[listindex].length <= 5){
-            setTimeout(type,300) 
+        if (words[listindex].length <= 6){
+            setTimeout(type, 250) 
         }
         else {
-            setTimeout(type,150) 
+            setTimeout(type, 150) 
         }
     }
     else {
         if (wordindex > words[listindex].length){ 
-            letter = words[listindex].slice(0,words[listindex].length);
-            wordindex--;
+            letter = words[listindex].slice(0,words[listindex].length+1);
         }
-        letter = words[listindex].slice(0,wordindex);
-        document.querySelector('.word').textContent = letter;
+        else{
+            document.querySelector('.period').textContent = "";
+            letter = words[listindex].slice(0,wordindex);
+            document.querySelector('.word').textContent = letter;
+        }
         wordindex--;
         if (wordindex < 0){
             atEnd = false;
             listindex++;
             wordindex = 0;
         }
-        setTimeout(type,100) 
+        setTimeout(type, 50) 
     }
-    
 }; 
 
 type();

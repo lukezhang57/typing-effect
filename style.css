@@ -12,6 +12,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.background2{
+    background-image: url(clouds.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .textcontainer{
     display: flex;
     padding: 50px;
@@ -22,7 +30,11 @@ body {
     position: relative;
     color: #12e397;
 }
-.word::after{
+.period{
+    position: relative;
+    color: white;
+}
+.period::after{
     content: "";
     position: absolute;
     width: 2px;
