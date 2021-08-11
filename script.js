@@ -1,4 +1,4 @@
-const words = ['run','bike','code','explore','create','hike']
+const words = ['run','bike','code','go outdoors', 'learn','challenge myself']
 let listindex = 0;
 let wordindex = 0;
 let letter = '';
@@ -21,6 +21,12 @@ function type(){
         else if (wordindex > words[listindex].length){
             atEnd = true;
         }
+        if (words[listindex].length <= 5){
+            setTimeout(type,300) 
+        }
+        else {
+            setTimeout(type,150) 
+        }
     }
     else {
         if (wordindex > words[listindex].length){ 
@@ -35,8 +41,9 @@ function type(){
             listindex++;
             wordindex = 0;
         }
+        setTimeout(type,100) 
     }
-    setTimeout(type,200) 
+    
 }; 
 
 type();
