@@ -16,6 +16,7 @@ body {
     display: flex;
     padding: 50px;
     user-select: none;
+    flex-direction: column;
 }
 .word {
     position: relative;
@@ -27,7 +28,7 @@ body {
     width: 2px;
     height: 60px;
     background-color: rgb(240,240,240);
-    margin-left: 8px;
+    
     animation: blink 0.85s infinite ease;
     margin-top: 20px;
 }
