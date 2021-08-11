@@ -1,4 +1,4 @@
-const words = ['run','bike','code','explore','create']
+const words = ['run','bike','code','explore','create','hike']
 let listindex = 0;
 let wordindex = 0;
 let letter = '';
