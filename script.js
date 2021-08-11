@@ -1,4 +1,4 @@
-const words = ['run','bike','code','go outdoors', 'learn','challenge myself','explore']
+const words = ['a runner','a computer science student','an adventure seeker', 'a risk taker']
 let listindex = 0;
 let wordindex = 0;
 let letter = '';
@@ -25,7 +25,7 @@ function type(){
             setTimeout(type, 250) 
         }
         else {
-            setTimeout(type, 150) 
+            setTimeout(type, 100) 
         }
     }
     else {
