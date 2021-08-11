@@ -22,7 +22,7 @@ body {
 }
 .textcontainer{
     display: flex;
-    padding: 50px;
+    padding: 100px 0px 0px 150px;
     user-select: none;
     flex-direction: column;
 }
